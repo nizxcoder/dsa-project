@@ -96,12 +96,12 @@ export default function HomePage() {
         />
         <h2 className="mx-2">{array.length}</h2>
       </div>
-      <div className="array-fields flex gap-3 justify-center m-5 flex-wrap">
+      <div className="border p-5 rounded-lg array-fields flex gap-3 justify-center m-5 flex-wrap">
         {array.map((value, index) => (
           <ArrayField value={value} key={index} bgColor={color[index]} />
         ))}
       </div>
-      <div className="flex justify-center gap-5">
+      <div className="flex justify-center gap-5 sm:flex-col-rev">
         <input
           type="number"
           className="border"
